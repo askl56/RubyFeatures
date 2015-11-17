@@ -1,4 +1,7 @@
-File.open("example.txt", "a+") do |file|
+File.open("./file/example.txt", "a+") do |file|
+
+  file.puts "\n"
+
   print "Enter your name: "
   name = gets.chomp
   file.puts "Name: #{name}"
